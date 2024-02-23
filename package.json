@@ -1,0 +1,12 @@
+{
+  "name": "rs232-tuanzin",
+  "version": "1.0.0",
+  "description": "Thư viện dựa trên Serial Port dùng để đọc dữ liệu qua RS232",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
