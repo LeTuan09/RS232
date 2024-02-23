@@ -2,39 +2,27 @@
   "name": "rs232-tuanzin",
   "version": "1.0.0",
   "description": "Thư viện dựa trên Serial Port dùng để đọc dữ liệu qua RS232",
-  "main": "./dist/index.js",
-  "types": "./dist/index.d.ts",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc --build tsconfig-build.json"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/LeTuan09/RS232"
   },
-  "keywords": ["rs232", "serialport"],
+  "keywords": [
+    "rs232",
+    "serialport"
+  ],
   "author": "LE NGOC TUAN",
   "license": "MIT",
-  "dependencies": {
-    "@serialport/binding-mock": "10.2.2",
-    "@serialport/bindings-cpp": "12.0.1",
-    "@serialport/parser-byte-length": "12.0.0",
-    "@serialport/parser-cctalk": "12.0.0",
-    "@serialport/parser-delimiter": "12.0.0",
-    "@serialport/parser-inter-byte-timeout": "12.0.0",
-    "@serialport/parser-packet-length": "12.0.0",
-    "@serialport/parser-readline": "12.0.0",
-    "@serialport/parser-ready": "12.0.0",
-    "@serialport/parser-regex": "12.0.0",
-    "@serialport/parser-slip-encoder": "12.0.0",
-    "@serialport/parser-spacepacket": "12.0.0",
-    "@serialport/stream": "12.0.0",
-    "debug": "4.3.4"
-  },
   "engines": {
     "node": ">=16.0.0"
   },
   "devDependencies": {
     "typescript": "5.2.2"
+  },
+  "dependencies": {
+    "serialport": "^12.0.0"
   }
 }
