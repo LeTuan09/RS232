@@ -1,5 +1,4 @@
-const { SerialPort } = require("serialport");
-const { ReadlineParser } = require('@serialport/parser-readline');
+const { SerialPort, ReadlineParser } = require("./lib/rs232");
 
 const connectSerialPort = ({ path = "", baudRate = 9600, parity = "", dataBits = 8, stopBits = 1, flowControl = false }) => {
     return new Promise((resolve, reject) => {
@@ -24,9 +23,6 @@ const ReadDataString = (port, callback) => {
         })
 }
 
-module.exports = {
-    connectSerialPort,
-    ReadDataString
-}
+module.exports = { connectSerialPort, ReadDataString }
 
 
