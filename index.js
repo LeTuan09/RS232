@@ -52,7 +52,6 @@ const ReaDataTCP = async (addr, sl, callback) => {
     }
 }
 
-
-module.exports = { connectSerialPort, ReadDataString, ConnectTCP, ReaDataTCP }
+module.exports = { connectSerialPort, ReadDataString, ConnectTCP_IP, ReaDataTCP }
 
 
